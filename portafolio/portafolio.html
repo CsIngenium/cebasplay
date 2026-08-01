@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CebasDev Portafolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar">
+    <div class="logo">CEBASDEV <span>&lt;/&gt;</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre Mí</a></li>
+      <li><a href="#showcase">Demo Video</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#contact" class="btn-discord">Discord</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner Principal (Hero / Sobre Mí) -->
+  <header class="hero" id="about">
+    <div class="hero-container">
+      <div class="avatar-card">
+        <!-- Reemplaza "tu-avatar.png" por la imagen de tu personaje -->
+        <img src="avatar.webp" alt="Roblox Avatar" class="avatar-img" />
+      </div>
+      <div class="hero-text">
+        <span class="badge">ROBLOX SCRIPTER PORTFOLIO</span>
+        <h1>CEBASDEV</h1>
+        <p>
+          Especializado en sistemas complejos, DataStores, ModuleScripts y correción de bugs y errores. 
+          Transformando ideas en experiencias funcionales y fluidas.
+        </p>
+        <a href="#projects" class="btn-primary">Ver Mis Trabajos</a>
+      </div>
+    </div>
+  </header>
+
+  <hr class="divider">
+
+  <!-- SECCIÓN: Video Showcase de YouTube (Entre Sobre Mí y Proyectos) -->
+  <section class="section video-section" id="showcase">
+    <h2 class="section-title">Demostración en Video</h2>
+    
+    <div class="video-container">
+      <!-- Adorno de esquina: Superior Izquierda -->
+      <div class="corner-accent corner-top-left"></div>
+      
+      <!-- Adorno de esquina: Inferior Derecha -->
+      <div class="corner-accent corner-bottom-right"></div>
+
+      <!-- Marco contenedor del video -->
+      <div class="video-wrapper">
+        <!-- Reemplaza la URL de embed ("https://www.youtube.com/embed/TU_VIDEO_ID") por el ID de tu video de YouTube -->
+        <iframe 
+          src="https://www.youtube.com/watch?v=IFz34Opqrpc" 
+          title="Roblox Scripting Showcase" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Sección de Proyectos (Rectángulos con imagen alterna) -->
+  <section class="section" id="projects">
+    <h2 class="section-title">Proyectos Destacados</h2>
+    <div class="projects-list">
+      
+      <!-- Proyecto 1: Imagen a la izquierda -->
+      <div class="project-row">
+        <div class="project-preview">
+          <div class="preview-overlay"></div>
+          <img src="bubble.webp" alt="Roblox Avatar" class="bubble" />
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>BubblePop</h3>
+            <span class="tech-tag">Singleplayer</span>
+          </div>
+          <p>
+            ¡Es un relajante juego de puzzle para un jugador! Donde puedes reventar burbujas mientras chateas con tus amigos 💬. Despeja tu mente mientras revientas burbujas.
+          </p>
+          <div class="project-links">
+            <a href="https://www.roblox.com/es/games/131857279034763/Bubble-Pop" target="_blank" class="btn-secondary">Ver en Roblox</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 2: Imagen a la DERECHA (clase "reverse") -->
+      <div class="project-row reverse">
+        <div class="project-preview">
+          <div class="preview-overlay"></div>
+          <img src="lucky.webp" alt="Roblox Avatar" class="lucky" />
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Mistery Lucky Blocks</h3>
+            <span class="tech-tag">Random</span>
+          </div>
+          <p>
+            🍀 Bloques de la Suerte Misteriosos - ¿Qué obtendrás? 🎲
+
+Deberías hacer clic en los Bloques de la Suerte. ¿Quién sabe qué hay dentro? Puedes encontrar un arma, una mascota o incluso un generador. ¡Vamos, pruébalo!
+          </p>
+          <div class="project-links">
+            <a href="https://www.roblox.com/es/games/132730002593833/Mystery-Lucky-Blocks" target="_blank" class="btn-secondary">Ver en Roblox</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 3: Imagen a la izquierda -->
+      <div class="project-row">
+        <div class="project-preview">
+          <div class="preview-overlay"></div>
+          <img src="mina.webp" alt="Roblox Avatar" class="lucky" />
+        </div>
+        <div class="project-info">
+          <div class="project-header">
+            <h3>Mina Clásica</h3>
+            <span class="tech-tag">Simulador</span>
+          </div>
+          <p>
+⛏️ ¡Empieza tu viaje de minería! 💎
+
+Comienza con un pico básico, pica piedras, vende tus recursos y mejora tu equipo. ¡Descubre minerales raros y conviértete en el magnate minero más rico de Roblox!
+          </p>
+          <div class="project-links">
+            <a href="https://www.roblox.com/es/games/118177208524826/Mina-Cl-sica" target="_blank" class="btn-secondary">Ver en Roblox</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sección de Habilidades -->
+  <section class="section" id="skills">
+    <h2 class="section-title">Habilidades Técnicas</h2>
+    <div class="grid-skills">
+      
+      <div class="skill-card">
+        <div class="skill-icon">&lt;/&gt;</div>
+        <h4>Lua Scripting</h4>
+        <div class="progress-bar"><div class="fill" style="width: 95%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">💾</div>
+        <h4>DataStore Service</h4>
+        <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">📦</div>
+        <h4>ModuleScripts</h4>
+        <div class="progress-bar"><div class="fill" style="width: 88%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <h4>Optimización</h4>
+        <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🔄</div>
+        <h4>Cliente / Servidor</h4>
+        <div class="progress-bar"><div class="fill" style="width: 92%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🖥️</div>
+        <h4>Custom UI (Gui)</h4>
+        <div class="progress-bar"><div class="fill" style="width: 80%;"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pie de página / Contacto -->
+  <footer class="footer" id="contact">
+    <h3>¿Tienes un proyecto en mente?</h3>
+    <p>Contáctame en Discord: <strong>cebasplay</strong></p>
+    <p class="copyright">2026</p>
+  </footer>
+
+</body>
+</html>
